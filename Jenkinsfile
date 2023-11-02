@@ -15,6 +15,12 @@ pipeline {
           }
         }
 
+        stage('shell') {
+          steps {
+            sh 'echo "12345"'
+          }
+        }
+
       }
     }
 
