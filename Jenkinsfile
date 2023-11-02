@@ -17,7 +17,9 @@ pipeline {
 
         stage('shell') {
           steps {
-            sh 'mvn -s ./settings.xml package'
+            sh '''mvn -s ./settings.xml package
+echo "aaaa"
+echo "bbbb"'''
           }
         }
 
