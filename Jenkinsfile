@@ -33,8 +33,9 @@ echo "bbbb"'''
       }
     }
     stage('print2') {
+      agent any
       steps {
-        println 'aaaaaaabbbbbbcccaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbb'
+        echo 'aaaaaaabbbbbbcccaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbb'
       }
     }
 
