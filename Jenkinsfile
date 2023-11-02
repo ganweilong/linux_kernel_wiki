@@ -32,4 +32,7 @@ pipeline {
     }
 
   }
+  environment {
+    release_env = '1.0.0'
+  }
 }
