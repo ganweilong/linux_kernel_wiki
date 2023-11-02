@@ -32,6 +32,12 @@ echo "bbbb"'''
         echo 'aaaaaaabbbbbbccc'
       }
     }
+    stage('print2') {
+      agent any
+      steps {
+        echo 'aaaaaaabbbbbbcccaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbb'
+      }
+    }
 
   }
   environment {
