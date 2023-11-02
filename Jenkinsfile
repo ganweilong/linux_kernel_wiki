@@ -5,7 +5,8 @@ pipeline {
       parallel {
         stage('build job1') {
           steps {
-            build 'test_blue_ocean'
+            //build 'test_blue_ocean'
+            build job: 'test_blue_ocean', parameters: [string(name: 'release_env', value: 'aaaaabbb'), string(name: 'release_version', value: '1.0.2')]
           }
         }
 
