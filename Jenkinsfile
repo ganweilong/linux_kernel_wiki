@@ -5,13 +5,13 @@ pipeline {
       parallel {
         stage('build job1') {
           steps {
-            build(job: 'test_blue_ocean', wait: true)
+            build 'test_blue_ocean'
           }
         }
 
         stage('buildjob2') {
           steps {
-            build(job: 'test_blue_ocean2', wait: true)
+            build 'test_blue_ocean2'
           }
         }
 
